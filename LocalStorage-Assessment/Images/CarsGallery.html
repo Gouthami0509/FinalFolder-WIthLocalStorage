@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cars Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-u1-1.12.1.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css">
+    <link rel="stylesheet" type="text/css" href="menuplugin.css">
+    <link rel="stylesheet" type="text/css" href="CarsGallery.css">
+    <!-- <link rel="stylesheet" type="text/css" href="Admin.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.1/themes/Redmond/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/jquery3.4.0.js"> </script>
+    <script src="js/jquery-ui.js"> </script> 
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.jqGrid.min.js"> </script> 
+
+    <!-- <script src="AdminPage.js"> </script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<script>
+    $( function() {
+      $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+      $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+    } );
+    </script>
+    <style>
+    .ui-tabs-vertical { 
+        width: 100%;
+        float: left;
+        }
+    .ui-tabs-vertical .ui-tabs-nav { 
+        padding: .2em .1em .2em .2em;
+         float: left;
+         width: 12em;
+         }
+    .ui-tabs-vertical .ui-tabs-nav li { 
+        clear: left;
+         width: 100%;
+         border-bottom-width: 1px !important; 
+         border-right-width: 0 !important; 
+         /* margin: 0 -1px .2em 0; */
+         }
+    .ui-tabs-vertical .ui-tabs-nav li a { 
+        display:block;
+     }
+    .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { 
+        padding-bottom: 0;
+         padding-right: .1em; 
+         border-right-width: 1px; 
+        }
+    .ui-tabs-vertical .ui-tabs-panel { 
+         float: right;
+          width: 70%;
+
+        }
+
+        #IdImages{
+            /* display: flex; */
+        }
+
+        img{
+            padding: 20px;
+            margin-left: -10%;
+        }
+    </style>
+<body>
+ <!-- ---------NavBar---- -->
+ <div id="IdAdminBodyPage"> 
+    <header>
+        <span class="ClsLogo"> <img class="animate__animated animate__backInLeft" src="Images/ImgLogo.png" /> </span>
+        <div id="IDHeader" class="animate__animated animate__backInUp">
+            <span class="fas fa-map-marked-alt"> 18 Main Street East 8007 </span> &nbsp; &nbsp; &nbsp;
+            <span class="fas fa-mobile-alt"> +919886661016 </span> &nbsp; &nbsp; &nbsp;
+            <span class="far fa-clock"> Mon-Fri 09:00-18:00 </span>
+        </div>
+
+        <div id="IDSocialIcons" class="animate__animated animate__fadeInBottomRight">
+            <span class="fab fa-facebook"> </span> &nbsp;
+            <span class="fab fa-instagram"> </span> &nbsp;
+            <span class="fab fa-twitter-square"> </span> &nbsp;
+            <span class="fab fa-whatsapp"> </span>
+        </div>
+    </header>
+
+    <section id="IDNav">
+        <div id="IDSticky">
+
+            <div id="IDSubHeader"></div>
+            <div>
+
+                <div class="animate__animated animate__backInRight">
+
+                    <ul class="nav">
+                        <li class="dropdown"><a href="#">Home</a> </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our Gallery</a></li>
+                        <li class="dropdown"><a href="#"> Discounts </a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+    
+
+<!-- -------------------CarGallerytabs--------------- -->
+<div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Benz</a></li>
+      <li><a href="#tabs-2">Audi</a></li>
+      <li><a href="#tabs-3"> Bmw</a></li>
+    </ul>
+    <div id="tabs-1">
+      <h2>Benz A Class</h2>
+        
+      <div id="IdImages"> 
+        <img src="Images/Benz1.jpg" width="50%" height="50%" > <br> <br>
+        <img src="Images/Ben2.jpg" width="50%" height="50%">
+    
+        <img src="Images/ImgBenzAClass.jpg" width="50%" height="50%" >
+    </div>
+    </div>
+    <div id="tabs-2">
+      <h2>Audi</h2>
+      <img src="Images/ImgAudiA3.jpg">
+      <img src="Images/ImgAudiA5.jpg">
+      <img src="Images/ImgAudiQ7.jpg">
+    
+    </div>
+    <div id="tabs-3">
+      <h2>BMW</h2>
+      <img src="Images/BMW2.jpg">
+      <img src="Images/BMW3.jpg">
+      <img src="Images/ImgBmw.jpg">
+      <img src="Images/ImgBmw7.jpg">
+      <img src="Images/ImgBmwX6.jpg">
+        
+    </div>
+  </div>
+</body>
+</html>

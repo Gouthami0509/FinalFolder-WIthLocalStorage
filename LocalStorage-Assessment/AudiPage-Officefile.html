@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AudiCars</title>
+    <link rel="stylesheet" type="text/css" href="css/ui.jqgrid.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-u1-1.12.1.css">
+    <link rel="stylesheet" type="text/css" href="menuplugin.css">
+    <link rel="stylesheet" type="text/css" href="AudiPage-Officefile.css">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.1/themes/Redmond/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="js/jquery3.4.0.js"> </script>
+    <script src="js/jquery-ui.js"> </script> 
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="AudiPage-Officefile.js"> </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="js/grid.locale-en.js"> </script>
+    <script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>   -->
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="Css/ui.jqgrid.css"> --
+    <link rel="stylesheet" type="text/css" href="Css/jquery-ui-1.12.1.css">
+    <link rel="stylesheet" type="text/css" href="Css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="Css/Audi.css">
+    <link rel="stylesheet" type="text/css" href="Css/Menu.css">
+    <link rel="stylesheet" type="text/css" href="Js/star-rating-svg.css">
+    <link rel="stylesheet" type="text/css" href="Css/AnimationEffects.css">
+    <link rel="stylesheet" type="text/css" href="Css/sweetalert.css">
+    <link rel="stylesheet" href="CSS/password_strength.css"> 
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/Redmond/jquery-ui.css" />
+
+   
+    <script type="text/javascript" src="JS/jquery-3.4.0.js"></script>
+    <script src="Js/jquery-ui.js"> </script>
+    <script src="Js/sweetalert.js"> </script>
+    <script  src="JS/password_strength_lightweight.js" > </script> 
+    <script src="Js/grid.locale-en.js"> </script>
+    <script src="Js/jquery.jqGrid_4.7.js"> </script>
+    <script src="Js/Audi.js"></script>
+    <script src="Js/jQuery.starrating.js"></script>
+    <script src="Js/jquery.star-rating-svg.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+</head>
+
+
+<body>
+  
+    <header>
+        <span class="ClsLogo"> <img class="animate__animated animate__backInLeft" src="Images/ImgLogo.png" /> </span>
+        <div id="IDHeader" class="animate__animated animate__backInUp">
+            <span class="fas fa-map-marked-alt"> 18 Main Street East 8007 </span> &nbsp; &nbsp; &nbsp;
+            <span class="fas fa-mobile-alt"> +919886661016 </span> &nbsp; &nbsp; &nbsp;
+            <span class="far fa-clock"> Mon-Fri 09:00-18:00 </span>
+        </div>
+
+        <div id="IDSocialIcons" class="animate__animated animate__fadeInBottomRight">
+            <span class="fab fa-facebook"> </span> &nbsp;
+            <span class="fab fa-instagram"> </span> &nbsp;
+            <span class="fab fa-twitter-square"> </span> &nbsp;
+            <span class="fab fa-whatsapp"> </span>
+        </div>
+    </header>
+
+    <section id="IDNav">
+        <div id="IDSticky">
+
+            <div id="IDSubHeader"></div>
+            <div>
+
+                <div class="animate__animated animate__backInRight">
+
+                    <ul class="nav">
+                        <li class="dropdown"><a href="#">Home</a> </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li class="dropdown"> <a href="#">Login</a>
+                            <ul>
+                                <li id="IdUserLogin"><a href="#">UserLogin/Register</a></li>
+                                <li><a href="AdminPage.html">Admin Login</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Identity</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="dropdown"><a href="#"> Discounts </a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="IdAudiDescription">
+            <h1 class="ClsAudiHeading">Audi</h1>
+            <p class="ClsAudiTagLine">"Being Ahead through Technology"</p>
+        </div>
+
+    <div class="ClsAudiFullContainer"> 
+        <section id="IDCarsContainer">
+            <div id="IdAudi">
+                <div class="ClsAudiDescrit">
+                    <img class="ClsAudiA3Img" src="Images/ImgAudiA3.jpg">
+                    <h2>Audi A3</h2>
+
+                    <div class="ClsRupees">
+                        <p> <b> &#36;900 </b> </p>
+                        <span> Per Day </span>
+                    </div>
+                    <!-- <div id="my-rating-1"></div><br> -->
+                    <!-- <p> 5 people &nbsp; 3 bags &nbsp; Automatic &nbsp; &#9981 Disel </p> <br> -->
+
+                    <div id="IdIcons">
+                        <div>
+                            <i class="fas fa-users"> </i>
+                            <p>5</p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-briefcase"></i>
+                            <p>2</p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-users"> </i>
+                            <p>Auto</p>
+                        </div>
+                    </div>
+
+                    <div class="ClsCarInnerDescription">
+                        <div>
+                            <p> &#10004; &nbsp; Audio Input</p>
+                            <p> &#10004; &nbsp; Bluetooth</p>
+                            <p> &#10004; &nbsp; Headted Seater</p>
+                        </div>&nbsp;&nbsp;&nbsp;
+
+                        <div>
+                            <p> &#10004; &nbsp; Audio Input</p>
+                            <p> &#10004; &nbsp; Bluetooth</p>
+                            <p> &#10004; &nbsp; Headted Seater</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="IDCarsContainer">
+            <div id="IdAudi">
+                <div class="ClsAudiDescrit">
+                    <img class="ClsAudiA3Img" src="Images/ImgAudiQ7.jpg">
+                    <h2>Audi Q7</h2>
+
+                    <div class="ClsRupees">
+                        <p> <b> &#36;900 </b> </p>
+                        <span> Per Day </span>
+                    </div>
+                    <!-- <div id="my-rating-2"></div><br> -->
+                    <!-- <p> 5 people &nbsp; 3 bags &nbsp; Automatic &nbsp; &#9981 Disel </p> <br> -->
+
+                    <div id="IdIcons">
+                        <div>
+                            <i class="fas fa-users"> </i>
+                            <p>5</p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-briefcase"></i>
+                            <p>2</p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-users"> </i>
+                            <p>Auto</p>
+                        </div>
+                    </div>
+
+                    <div class="ClsCarInnerDescription">
+                        <div>
+                            <p> &#10004; &nbsp; Audio Input</p>
+                            <p> &#10004; &nbsp; Bluetooth</p>
+                            <p> &#10004; &nbsp; Headted Seater</p>
+                        </div>&nbsp;&nbsp;&nbsp;
+
+                        <div>
+                            <p> &#10004; &nbsp; Audio Input</p>
+                            <p> &#10004; &nbsp; Bluetooth</p>
+                            <p> &#10004; &nbsp; Headted Seater</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="IDCarsContainer">
+            <div id="IdAudi">
+                <div class="ClsAudiDescrit">
+                    <img class="ClsAudiA3Img" src="Images/ImgBmw.jpg">
+                    <h2>Audi A4</h2>
+
+                    <div class="ClsRupees">
+                        <p> <b> &#36;900 </b> </p>
+                        <span> Per Day </span>
+                    </div>
+                    <!-- <div id="my-rating-3"></div><br> -->
+                    <!-- <p> 5 people &nbsp; 3 bags &nbsp; Automatic &nbsp; &#9981 Disel </p> <br> -->
+
+                    <div id="IdIcons">
+                        <div>
+                            <i class="fas fa-users"> </i>
+                            <p>5</p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-briefcase"></i>
+                            <p>2</p>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-users"> </i>
+                            <p>Auto</p>
+                        </div>
+                    </div>
+
+                    <div class="ClsCarInnerDescription">
+                        <div>
+                            <p> &#10004; &nbsp; Audio Input</p>
+                            <p> &#10004; &nbsp; Bluetooth</p>
+                            <p> &#10004; &nbsp; Headted Seater</p>
+                        </div>&nbsp;&nbsp;&nbsp;
+
+                        <div>
+                            <p> &#10004; &nbsp; Audio Input</p>
+                            <p> &#10004; &nbsp; Bluetooth</p>
+                            <p> &#10004; &nbsp; Headted Seater</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <!------------------ User Login Page ---------------->
+
+        <!-- The Modal -->
+        <div id="IdLoginForm" class="ClsModalStyles">
+            <!-- Modal content -->
+            <div class="ClsModalStyles-content">
+                <span class="ClsCloseModal">&times;</span>
+                <div class="ClsSectionImg">
+                    <img src="Images/ImgLoginPage.png">
+                    <div id="IdLoginFieldset">
+                        <h3>Welcome :)</h3>
+                        <p class="ClsPara">To keep connected with us please login with your personal information by
+                            phone number and password</p>
+                        <fieldset>
+                            <legend>Enter your Credentials</legend>
+                            <form>
+                                <div class="group">
+                                    <label class="ClsPhoneNo" >  Phone Number </label>
+                                    <input type="text" class="ClsInputBox" id="IdUserPhoneNumber" placeholder="&#128242;">
+                                    <label class="ClsPassword" >Password</label>
+                                    <input type="text" id="IdUserPswd" placeholder="&#128273;">
+                                    <!-- &#128092; lock icon -->
+                                    <button class="ClsLoginBtn" id="IdSignUpBtn"> SignUp </button>
+                                    <button  id="IdRegisterBtn"> Register </button>
+                                </div>
+                            </form>
+                            <div>
+                                <p id="Idh5Tag">Or you can join with</p>
+                                <i class="fab fa-facebook" id="IdFacebook"></i>
+                                <i class="fab fa-twitter" id="IdTwitter"></i>
+                                <div>
+                                    <img class="ClsInstaIcon" src="Images/ImgInsta.svg">
+
+                                </div>
+                                <div>
+                                    <img class="ClsGoogleIcon" src="Images/ImgGoogleIcon.png">
+                                </div> 
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------ User Login Page Ends---------------->
+
+
+        <!------------------ Registration Page ---------------->
+        <!-- The Modal -->
+       
+        <div id="IdRegistrationForm" class="ClsRegisterStyles">
+            <!-- Modal content -->
+            <div class="ClsRegisterStyles-content">
+                <span class="ClsCloseModal">&times;</span>
+
+                <div>
+                    <img class="ClsRegisterImg" src="Images/ImgRegistrationGirl.png">
+                </div>
+
+                <div class="ClsRegisterImgTwo">
+                    <img src="Images/ImgRegistrationBgCrop.png">
+                </div>
+                <div class="ClsRegisterBorder">
+                    <p class="ClsNewAccount"> New Account? </p>
+                    <div>
+                        <input id="IdRegisterUserInp" class="IdInputText" type="text" placeholder="Username">
+                        <i class="far fa-user"></i>
+                    </div>
+
+                    <div>
+                        <input id="IdRegisterPhoneInp" class="IdInputText" maxlength="10" type="text" placeholder="Phone Number">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+
+                    <div>
+                        <input id="IdRegisterEmailInp" class="IdInputText" maxlength="17" type="text" placeholder="Email">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    
+                    <div>
+                        <input id="IdRegisterDLNoInp" class="IdInputText" type="text" placeholder="Driving License Number">
+                        <i class="far fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <input id="IdRegisterPswdInp" class="IdInputText" type="text" placeholder="Password">
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+
+                    <div>
+                        <input id="IdRegisterConfirmPswdInp" class="IdInputText" type="text" placeholder="Confirm Password">
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+
+
+                    <div class="IdRegisterBtnDiv">
+                        <button id="IdRegisterBtnTwo">Register</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+   
+        <!------------------ Registration Page Ends ---------------->
+
+<!-- --------------Book Now Form-------------------- -->
+        <!-- <div id="IdBookingFromDiv">
+
+            <table id="IdBookingTable">
+                <tr>
+                    <td>Your Name:</td>
+                    <td><input id="IdBFUserName" type="text" name="" >   <br>
+                        <span class="ClsErrorMsgs"></span>                  
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PhoneNumber:</td><br>
+                    <td> <input type="text" name="" id="IdBFPhoneNumber"> </td> <br>
+                    <span class="ClsErrorMsgsTwo"></span>
+                </tr>
+
+                <tr>
+                    <td>EmailID:</td>
+                    <td> <input type="text" name="" id="IdBFEmail"> </td>
+                </tr>
+
+                <tr>
+                    <td>PickUp Date:</td>
+                    <td> <input type="text" name="" id="IdBFPickUpDate"> </td>
+                </tr>
+
+                <tr>
+                    <td>PickUp Location</td>
+                    <td> <input type="text" name="" id="IdBFPickUpLocation"> </td>
+                </tr>
+
+                <tr>
+                    <td>DropDate:</td>
+                    <td> <input type="text" name="" id="IdBFDropDate"> </td>
+                </tr>
+
+                <tr>
+                    <td>DropLocation:</td>
+                    <td> <input type="text" name="" id="IdBFDropLocation"> </td>
+                </tr>
+
+
+                <tr>
+                    <td><button id="IdBFSubmitBtn">Submit</button></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <i class="fas fa-coffee fa-xs"></i> -->
+
+<!-- --------------Book Now Form ends-------------------- -->
+
+
+
+<!-- -------------new Booking form with styles -------------------- -->
+
+        <div id="IDNewBookingForm" class="animate__animated animate__backInDown">
+
+            <div id="IdNewBFDiv">
+                     <div class="ClsRegisterBorder1">
+                    <!-- <p class="ClsNewAccount1"> New Account? </p> -->
+                    <div>
+                        <input id="IdBFUserName" class="ClsInputText" type="text" placeholder="Full Name">
+                        <!-- <i class="far fa-user" id="IdIconsUser"></i> -->
+                        <img class="ClsUserImg" src="Images/ImgUserIcon.png">
+                        <span class="ClsErrorMsgs"></span>  
+
+                    </div>
+
+                    <div>
+                        <input id="IdBFPhoneNumber" class="ClsInputText" maxlength="10" type="text" placeholder="Phone Number">
+                        <!-- <i class="fas fa-mobile-alt" id="IdIconsPhone"></i> -->
+                        <img class="ClsUserImg" src="Images/ImgMobile.png">
+                        <span class="ClsErrorMsgsTwo"></span>  
+
+                    </div>
+
+                    <div>
+                        <input id="IdBFEmail" class="ClsInputText" maxlength="17" type="text" placeholder="EmailId">
+                        <!-- <i class="far fa-envelope" id="IdIconsMail"></i> -->
+                        <img class="ClsUserImg" src="Images/ImgMail.png">
+                        <span class="ClsErrorMsgsThree"></span> 
+                    </div>
+                    
+                    <div>
+                        <input id="IdBFPickUpLocation" class="ClsInputText" type="text" placeholder="PickUp Location">
+                        <!-- <i class="far fa-envelope" id="IdIconsLocation"></i> -->
+                        <img class="ClsTruckImg" src="Images/ImgTruck.png">
+                        <span class="ClsErrorMsgsFour"></span> 
+
+                    </div>
+
+                    <div>
+                        <input id="IdBFPickUpDate" class="ClsInputText" type="text" placeholder="PickUp Date">
+                        <!-- <i class="fas fa-lock"id="IdIconsDate"></i> -->
+                        <img class="ClsCalendarImg" src="Images/ImgCalendar.png">
+
+                    </div>
+
+                    <div>
+                        <input  id="IdBFDropLocation"class="ClsInputText" type="text" placeholder="Drop Location">
+                        <!-- <i class="far fa-envelope" id="IdIconsDropL"></i> -->
+                        <img class="ClsTruckImg" src="Images/ImgTruck.png">
+
+                    </div>
+
+                    <div>
+                        <input id="IdBFDropDate"  class="ClsInputText" type="text" placeholder="Drop Date">
+                        <!-- <i class="fas fa-lock" id="IdIconsDropDate"></i> -->
+                        <img class="ClsCalendarImg" src="Images/ImgCalendar.png">
+
+                    </div>
+
+                    <div class="IdRegisterBtnDiv">
+                        <button id="IdBookingConfrimBtn">Confrim Booking</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            </div>
+
+        </div>
+       
+
+
+<!-- ------------------AdminPage---------------- -->
+<!-- <div id="IdAdminForm" class="ClsModalStyles"> -->
+    <!-- Modal content -->
+    <!-- <div class="ClsModalStyles-content">
+        <span class="ClsCloseModal">&times;</span>
+        <div class="ClsSectionImg">
+            <img src="Images/ImgLoginPage.png">
+            <div id="IdLoginFieldset">
+                <h3>Welcome :)</h3>
+                <p class="ClsPara">To keep connected with us please login with your personal information by
+                    phone number and password</p>
+                <fieldset>
+                    <legend>Enter your Credentials</legend>
+                    <form>
+                        <div class="group">
+                            <label class="ClsPhoneNo"> Admin Id/Name </label>
+                            <input type="text" class="ClsInputBox" placeholder="&#128242;">
+                            <label class="ClsPassword">Password</label>
+                            <input type="text" placeholder="&#128273;">
+                           
+                            <button class="ClsLoginBtn"> SignUp </button>
+                            <button  id="IdRegisterBtn"> Register </button>
+                        </div>
+                    </form>
+                    <div>
+                        <p id="Idh5Tag">Or you can join with</p>
+                        <i class="fab fa-facebook" id="IdFacebook"></i>
+                        <i class="fab fa-twitter" id="IdTwitter"></i>
+                        <div>
+                            <img class="ClsInstaIcon" src="Images/ImgInsta.svg">
+
+                        </div>
+                        <div>
+                            <img class="ClsGoogleIcon" src="Images/ImgGoogleIcon.png">
+                        </div> 
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+        <!-- --------------------footer---------------------- -->
+        <footer>
+            <div class="footer">
+                <div class="inner-footer">
+
+                    <div class="footer-items">
+                        <img src="Images/ImgLogo.png" /> <br> <br> <br> <br>
+                        <h5 id="IdH5Tag"> Sign up to our newsletter to stay updated</h5>
+                        <div class="ClsFooterValidation">
+                            <!-- <input id="IdInputBox" id="IdEmail"  type="email" placeholder="Your Email"  />
+                                <input class="ClsSubscribe" type="submit" value="Subscribe"> <br>
+                                    <br> -->
+
+                            <table>
+                                <tr>
+                                    <td> <input type="text" id="IdInputBox" class="ClsEmail"
+                                            placeholder="xxx@gmail.com">
+                                        <button class="ClsSubscribe">Subscribe</button> <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="ClsEmailp"> </p>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="footer-items">
+                        <h2 class="Clsh2Tag">Company</h2>
+                        <div class="border"> </div>
+                        <ul class="ClsUl">
+                            <a href="About.htm">
+                                <li>About </li>
+                            </a>
+                            <a href="Terms.htm">
+                                <li>Terms & Conditions </li>
+                            </a>
+                            <a href="">
+                                <li>Privacy Policies </li>
+                            </a>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-items">
+                        <h2 class="Clsh2Tag">Contact</h2>
+                        <div class="border"> </div>
+                        <ul class="ClsUl">
+                            <a href="Contact.htm">
+                                <li>Contact </li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="footer-items">
+                        <h2 class="Clsh2Tag">Social</h2>
+                        <div class="border"> </div>
+                        <ul>
+                            <a href="www.facebook.com">
+                                <li> Facebook </li>
+                            </a>
+                            <a href="www.instagram.com">
+                                <li> Instagram</li>
+                            </a>
+                            <a href="www.twitter.com">
+                                <li> Twitter</li>
+                            </a>
+                            <a href="www.whatsapp.com">
+                                <li> Whatsapp</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
